@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Muay Thai Program">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151d27" />
+      <stop offset="1" stop-color="#0b0f14" />
+    </linearGradient>
+    <linearGradient id="glove" x1="0" y1="0.1" x2="0" y2="0.85">
+      <stop offset="0" stop-color="#f0512b" />
+      <stop offset="1" stop-color="#b03014" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="120" fill="url(#bg)" />
+  <g fill="url(#glove)">
+    <!-- yumruk + basparmak -->
+    <path d="M171.5 202.2a58.9 58.9 0 0 0 0 117.8 58.9 58.9 0 0 0 41.7-17.3 89.6 89.6 0 0 0 41.4 10.1h50.2a89.6 89.6 0 0 0 89.6-89.6v-25.6a89.6 89.6 0 0 0-89.6-89.6h-50.2a89.6 89.6 0 0 0-89.4 84.4c-.1 3.2-.1 6.4 0 9.8z" />
+    <!-- bilek manseti -->
+    <rect x="169" y="315" width="174" height="102" rx="25.6" />
+  </g>
+</svg>
