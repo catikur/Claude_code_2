@@ -51,13 +51,28 @@ npm test           # birim testleri
 
 ### Yayına alma
 
-`npm run build` çıktısı `dist/` klasöründeki statik dosyalardır. Sunucu
-gerektirmez; Netlify, Vercel, Cloudflare Pages, GitHub Pages ya da herhangi bir
-statik barındırmaya yüklenebilir. `vite.config.ts` içinde `base: './'` olduğu
-için alt dizinde de sorunsuz çalışır.
+`npm run build` çıktısı `dist/` klasöründeki statik dosyalardır. Arka uç,
+veritabanı ya da çalışan bir süreç gerektirmez.
 
-Telefona kurulum: siteyi HTTPS üzerinden açın →
+**Kendi VPS'inize kurmak için:** adım adım anlatım [`deploy/README.md`](deploy/README.md)
+içinde. Özet:
+
+```bash
+# sunucuda bir kerelik: nginx + alan adı + certbot (bkz. deploy/README.md)
+# sonra her yayında, kendi bilgisayarınızdan:
+VPS_HOST=program.alanadiniz.com ./deploy/deploy.sh
+```
+
+Betik derler, testleri koşar, dosyaları kopyalar ve yayını atomik olarak
+değiştirir; eski sürümler geri alınabilsin diye sunucuda kalır.
+
+Alternatif olarak Netlify, Vercel, Cloudflare Pages ya da GitHub Pages'e de
+yüklenebilir — `vite.config.ts` içinde `base: './'` olduğu için alt dizinde de
+sorunsuz çalışır.
+
+Telefona kurulum: siteyi **HTTPS** üzerinden açın →
 iOS'ta Safari "Paylaş → Ana Ekrana Ekle", Android'de Chrome "Uygulamayı yükle".
+HTTPS olmadan ana ekrana ekleme ve çevrimdışı çalışma devreye girmez.
 
 ### İkonlar
 
