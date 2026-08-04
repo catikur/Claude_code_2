@@ -47,7 +47,21 @@ npm run dev        # geliştirme sunucusu
 npm run build      # üretim derlemesi (dist/)
 npm run preview    # derlenmiş hâli yerelde çalıştır
 npm test           # birim testleri
+npm run build:demo # tek dosyalık deneme sürümü (dist-demo/demo.html)
 ```
+
+### Deneme sürümü
+
+`npm run build:demo` her şeyi tek bir HTML dosyasına gömer. Kurulum, sunucu ya
+da internet gerekmez — dosyayı çift tıklayıp açmak veya birine göndermek
+yeterli. Örnek kadro ve iki haftalık yoklama geçmişi kendiliğinden yüklenir,
+böylece uygulama boş ekranla açılmaz.
+
+Kalıcı depolamanın kapatıldığı ortamlarda (gömülü çerçeveler gibi) bellek içi
+bir depolamaya düşer: demo tam çalışır ama sayfa yenilenince başa döner. Üst
+şeritteki not hangi durumda olduğunu söyler.
+
+Hocaya VPS kurulumundan önce denetmek için pratik bir yol.
 
 ### Yayına alma
 
